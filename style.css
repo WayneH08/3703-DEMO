@@ -5,6 +5,14 @@ html, body
     text-align: center;
     background-color: #282525;
 }
+
+#image {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    z-index: 2;
+}
+
 h1 {
     font-size: 48px;
     color: hsl(0, 0%, 100%);
@@ -12,8 +20,17 @@ h1 {
     padding: 0;
 }
 p {
+    position: absolute;
     font-size: 24px;
     color: hsl(0, 0%, 100%);
-    margin: 0;
-    padding: 0;
+    top: 20px;
+    left: 500px;
+    z-index: 1;
+}
+
+canvas
+{
+    position: relative;
+    width: 100vw !important;
+    height: 100vh !important;
 }
